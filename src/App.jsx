@@ -37,7 +37,7 @@ function reducer(state, { type, payload }) {
       };
 
     case ACTIONS.CHOOSE_OPERATION:
-      if (state.currentOperand == null && state.previousOperand == null) {
+      if (state.currentOperand == "0" && state.previousOperand == null) {
         return state;
       }
 
@@ -52,7 +52,7 @@ function reducer(state, { type, payload }) {
         return {
           ...state,
           operation: payload.operation,
-          previousOperand: state.currentOperand,
+          previousOperand: state.currentOperand === "0" ? null : state.currentOperand,
           currentOperand: null,
         };
       }
