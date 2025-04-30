@@ -80,9 +80,9 @@ function reducer(state, { type, payload }) {
           currentOperand: null,
         };
       }
-      if (state.currentOperand == null) return state;
+      if (state.currentOperand == 0) return state;
       if (state.currentOperand.length === 1) {
-        return { ...state, currentOperand: null };
+        return { ...state, currentOperand: 0 };
       }
 
       return {
