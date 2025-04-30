@@ -72,9 +72,11 @@
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.2rem;
   height: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 .output .current-operand {
+  background-color: rgba(0, 0, 0, 0.85);
   color: white;
   font-size: 2.2rem;
   font-weight: 500;
